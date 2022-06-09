@@ -9,15 +9,16 @@ async function callApi() {
     for (let i = 0; i < 4; i++) {
         console.log(results[i].id);
         resultsContainer.innerHTML += `
-        <div class="shop-card">
-            <img
-                src="./img/autri-taheri-zq_68Tbjlv4-unsplash.jpg"
-                alt="Man in black hoodie"
-                class="shop-card-img"
-            />
-            <p class="shop-card-title">${results[i].acf.h1Title}</p>
-            <p class="shop-card-price">49.99$</p>
-        </div>`;
+                <div class="shop-card">
+                    <img
+                        src="./img/autri-taheri-zq_68Tbjlv4-unsplash.jpg"
+                        alt="Man in black hoodie"
+                        class="shop-card-img"
+                    />
+                    <p class="shop-card-title">${results[i].title}</p>
+                    <p class="shop-card-price">49.99$</p>
+            </div>`;
     }
 }
+
 callApi().then();
