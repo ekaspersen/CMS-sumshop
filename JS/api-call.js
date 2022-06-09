@@ -5,7 +5,7 @@ const urlAll = "https://uke.cdb.myftpupload.com/wp-json/wp/v2/posts";
 async function callApi() {
     const response = await fetch(urlAll);
     const results = await response.json();
-    resultsContainer.innerHTML = "";
+    resultsContainer.innerHTML = " ";
     for (let i = 0; i < 4; i++) {
         console.log(results[i].id);
         resultsContainer.innerHTML += `
