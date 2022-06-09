@@ -11,11 +11,11 @@ async function callApi() {
         resultsContainer.innerHTML += `
                 <div class="shop-card">
                     <img
-                        src="./img/autri-taheri-zq_68Tbjlv4-unsplash.jpg"
-                        alt="Man in black hoodie"
+                        src="${results[i].x_featured_media_original}"
+                        alt="Shop image"
                         class="shop-card-img"
                     />
-                    <p class="shop-card-title">${results[i].title}</p>
+                    <p class="shop-card-title">${results[i].acf.h1Title}</p>
                     <p class="shop-card-price">49.99$</p>
             </div>`;
     }
